@@ -10,7 +10,8 @@ function ProjectPage() {
             {oneProject.title}
         </h2>
         <h3>Created at: {oneProject.date_created}</h3>
-        <h3>{`Status: ${oneProject.is_open}`}</h3>
+      {/* const name = alex or const name = `${name} kazan` */}
+        <h3>{`Status: ${oneProject.is_open}`}</h3>  
         <h3>Pledges:</h3>
         <ul>
             {oneProject.pledges.map((pledgeData, key) => {
