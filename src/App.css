@@ -4,3 +4,17 @@
   column-gap: 10px;
   row-gap: 10px;
 }
+
+nav {
+  background-color: #060d45;
+  padding: 1%;
+  color: aliceblue;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+body  {
+  background-color: white;
+}
