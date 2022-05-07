@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import PledgeForm from "../../components/PledgeForm/PledgeForm";
 
 function ProjectPage() {
@@ -43,7 +43,9 @@ function ProjectPage() {
         })}
       </ul>
       <PledgeForm projectId={id} />
+      <button><Link to="/projects/edit">Edit Project</Link></button>
     </>
+    
   );
 }
 
