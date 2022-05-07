@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function LoginForm() {
 
@@ -40,7 +40,7 @@ function LoginForm() {
         if (credentials.username && credentials.password) {
           try {
             const response = await fetch(
-              `${process.env.REACT_APP_API_URL}api-token-auth/`,
+              `${process.env.REACT_APP_API_URL}users/authenticate/`,
               {
                 method: "post",
                 headers: {
@@ -52,7 +52,7 @@ function LoginForm() {
             const data = await response.json();
             console.log("data", data);
             window.localStorage.setItem("token", data.token);
-            navigate(`/project/${data.id}`);
+            navigate(`/users/${data.id}`);
           } catch (err) {
             console.log(err);
           }
@@ -84,8 +84,14 @@ function LoginForm() {
             <button type="submit" onClick={handleSubmit}>
                 Login
             </button>
+            <button><Link to="/">Return to Home</Link></button>
+
 
             <br></br>
+
+            <div>
+              <h3> Don't have an account? <br></br> <button><Link to="/users/register/">Register Here</Link></button> </h3>               
+            </div>
 
         </form>
     );

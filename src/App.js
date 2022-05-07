@@ -14,6 +14,7 @@ import ProjectPage from "./pages/ProjectPages/ProjectPage";
 import ProjectFormPage from "./pages/ProjectPages/ProjectFormPage";
 import RegisterPage from "./pages/RegisterFormPage";
 import ProfilePage from "./pages/UserPages/ProfilePage";
+import EditProjectFormPage from "./pages/ProjectPages/EditProjectFormPage";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/projects/:id" element={<ProjectPage />} />
           <Route path="/projects/create" element={<ProjectFormPage />} />
+          <Route path="/projects/edit" element={<EditProjectFormPage />} />
           <Route path="/users/:id" element={<ProfilePage />} />
           <Route path="/users/register/" element={<RegisterPage/>} />
         </Routes>
