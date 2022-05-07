@@ -52,7 +52,7 @@ function LoginForm() {
             const data = await response.json();
             console.log("data", data);
             window.localStorage.setItem("token", data.token);
-            navigate("/");
+            navigate(`/project/${data.id}`);
           } catch (err) {
             console.log(err);
           }
@@ -84,6 +84,9 @@ function LoginForm() {
             <button type="submit" onClick={handleSubmit}>
                 Login
             </button>
+
+            <br></br>
+
         </form>
     );
 }

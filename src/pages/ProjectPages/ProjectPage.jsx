@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import PledgeForm from "../components/PledgeForm/PledgeForm";
+import PledgeForm from "../../components/PledgeForm/PledgeForm";
 
 function ProjectPage() {
   // State

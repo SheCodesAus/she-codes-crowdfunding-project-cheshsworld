@@ -18,3 +18,32 @@ nav {
 body  {
   background-color: white;
 }
+
+header {
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 6px solid #34174b;
+  background-color: #8146af;
+}
+
+nav {
+  display: flex;
+  justify-content: center;   
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+  margin-top: -17px;
+         
+}
+
+.nav-text {
+  padding: 6px;
+  color: white;
+  font-weight: bold;    
+  border-style: groove;
+  text-decoration: underline
+}
+
+
+.nav-text:hover {
+  color: orange;
+  }

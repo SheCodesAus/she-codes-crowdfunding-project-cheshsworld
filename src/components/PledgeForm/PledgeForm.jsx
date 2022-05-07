@@ -75,7 +75,7 @@ function PledgeForm(pledgeData) {
             const data = await res.json();
             console.log(data);
             //This is how you navigate automatically 
-            navigate(`/project/${id}`);
+            navigate(`/projects/${id}`);
         } catch (err) {
             console.log(err);
         }
