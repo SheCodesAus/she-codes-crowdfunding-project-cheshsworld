@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // Imports
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function RegisterForm() {
   // State
@@ -117,6 +117,9 @@ function RegisterForm() {
             <button type="submit" onClick={handleSubmit}>
                 Create Account
             </button>
+            <button><Link to="/">Return to Home</Link></button>
+
+        
         </form>
     )
 }

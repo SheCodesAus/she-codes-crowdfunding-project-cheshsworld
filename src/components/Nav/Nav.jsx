@@ -7,7 +7,8 @@ function Nav() {
             <Link to="/">Home</Link> 
             <Link to="/login">Login</Link>                   
             <Link to="/users/register">Register</Link>
-            {/* <Link to="/users/">Profile</Link>     */}
+            <Link to="/users/:id">Profile</Link>  
+          
         </nav>
     );
 }
